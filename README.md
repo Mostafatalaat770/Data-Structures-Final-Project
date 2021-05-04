@@ -24,7 +24,7 @@ We have people and connections between them. These connections will be represent
 
 Breadth first traversal will be applied where a tree will be created and every level of this tree is the level of connection (k) with respect to the root node. A flag will be initiated declaring the start of a new level and when the flag is popped out of the BFS queue then that denotes that the level has ended and a new level will begin.
 
-Data structures And running time
+## Data structures And running time
 
 - Graph with linked list implementation for the people and the connections
 - Queue for BFS
@@ -36,8 +36,6 @@ Regarding space complexity, the complexity is O (V+E) where the worst case is O 
 Regarding time complexity, Breadth-first search has a running time of O (V + E) since every vertex and every edge will be checked once. Depending on the input to the graph, O (E) could be between O (1) and O (V^2)
 
 # Problem 2
-
-description
 
 ## Overview
 
@@ -61,7 +59,7 @@ The maze is a 2D array but it&#39;s worked on as a graph where if the neighborin
 
 We will apply Dijkstra&#39;s Algorithm in our program to determine the shortest paths from (0, 0) to (n-1, n-1) storing the pervious node and the cost of the trip starting from (0, 0) in each node. Then using a stack we can get the actual path.
 
-Data structures And running time
+## Data structures And running time
 
 - A 2d array for the maze
 - A 2d array for storing all the info (weight and pervious node)
@@ -78,8 +76,6 @@ Note that: N is the input integer, not the number of elements. If the complexity
 | O (n^2)         | O (n)            |
 
 # Problem 3
-
-description
 
 ## Overview
 
@@ -109,7 +105,7 @@ each route have info(source, destination, hours and cost) which we can store the
 
 We will apply Dijkstra&#39;s Algorithm in our program to determine the shortest paths of our graph from the give source while storing the routes of our desired path from source to destination, and calculate the number of hours the whole trip took and add the given M amount for each hour to our initial cost of each route taken.
 
-Data structures And running time
+## Data structures And running time
 
 - Vectors for the graph representation
 - Pairs for storing routes
